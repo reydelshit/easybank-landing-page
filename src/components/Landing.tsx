@@ -13,7 +13,7 @@ export default function Landing() {
           <img className="absolute top-0" src={LandingImagePhone} alt="image" />
         </div>
 
-        <div className="md:w-[40%] flex items-center md:items-start flex-col text-center md:text-start justify-center h-[100%]  md:h-[800px]">
+        <div className="md:w-[40%] px-[2rem] flex items-center md:items-start flex-col text-center md:text-start justify-center h-[100%]  md:h-[800px]">
           <h1 className="font-semibold text-5xl md:text-[4rem] mb-[2rem]">
             Next generation digital banking
           </h1>

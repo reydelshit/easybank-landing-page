@@ -35,7 +35,7 @@ export default function SecondaryP() {
 
   return (
     <div className="w-full flex md:h-[800px] md:justify-center items-center bg-[#f3f4f6] py-[2rem] md:py-0">
-      <div className="md:w-[80%] w-full">
+      <div className="md:w-[80%] w-full px-[2rem]">
         <div className="mb-[8rem] text-center md:text-start">
           <h1 className="font-semibold text-5xl md:text-[4rem] mb-[1rem]">
             Why choose Easybank?
