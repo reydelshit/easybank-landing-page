@@ -38,13 +38,13 @@ export default function Articles() {
     },
   ];
   return (
-    <div className="flex w-full justify-center h-[800px] items-center">
-      <div className="w-[80%]">
+    <div className="flex w-full justify-center mt-[2rem] md:mt-0 md:h-[800px] items-center">
+      <div className="md:w-[80%] w-full text-center md:text-start">
         <h1 className="text-[4rem] mb-[1rem]">Latest Articles</h1>
-        <div className="flex gap-8">
+        <div className="flex gap-8 md:flex-row flex-col">
           {data.map((item, index) => (
             <div
-              className="overflow-y-hidden border-2 rounded-md bg-white h-[25rem]"
+              className="overflow-y-hidden rounded-md bg-white h-[25rem]"
               key={index}
             >
               <img
@@ -55,7 +55,9 @@ export default function Articles() {
               <div className="p-4">
                 <p className="text-gray-500 text-sm">By {item.author}</p>
 
-                <h1 className="font-semibold text-lg">{item.title}</h1>
+                <h1 className="font-semibold text-lg hover:text-[#31d35c] cursor-pointer">
+                  {item.title}
+                </h1>
                 <p className="text-sm text-gray-600">{item.description}</p>
               </div>
             </div>

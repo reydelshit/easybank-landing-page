@@ -34,19 +34,24 @@ export default function SecondaryP() {
   ];
 
   return (
-    <div className="w-full flex h-[800px] justify-center items-center bg-[#f3f4f6]">
-      <div className="w-[80%] ">
-        <div className="mb-[8rem]">
-          <h1 className="text-[4rem] mb-[1rem]">Why choose Easybank?</h1>
-          <p className="w-[60%]">
+    <div className="w-full flex md:h-[800px] md:justify-center items-center bg-[#f3f4f6] py-[2rem] md:py-0">
+      <div className="md:w-[80%] w-full">
+        <div className="mb-[8rem] text-center md:text-start">
+          <h1 className="font-semibold text-5xl md:text-[4rem] mb-[1rem]">
+            Why choose Easybank?
+          </h1>
+          <p className="md:w-[60%] ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
             deleniti neque eaque ad commodi earum, autem porro expedita quod?
             Modi.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-col justify-center items-center w-full md:flex-row">
           {data.map((item, index) => (
-            <div key={index}>
+            <div
+              className="flex justify-center items-center flex-col text-center md:text-start md:block"
+              key={index}
+            >
               <img className="mb-[2rem]" src={item.img} alt={item.text} />
               <h1 className="mb-[2rem] font-semibold text-[2rem]">
                 {item.title}
