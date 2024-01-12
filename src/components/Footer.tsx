@@ -4,7 +4,6 @@ import Instagram from '../assets/images/icon-instagram.svg';
 import Pinterest from '../assets/images/icon-pinterest.svg';
 import Youtube from '../assets/images/icon-youtube.svg';
 
-import Logo from '../assets/images/logo.svg';
 import RequestButton from './reusable/RequestButton';
 
 export default function Footer() {
